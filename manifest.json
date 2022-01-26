@@ -1,15 +1,19 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "CSP image lazy load bug",
+  "description": "Bug demo: page CSP blocks extension content script image lazy load",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "permissions": [
+    "scripting",
     "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
     "*://*.example.com/"
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
