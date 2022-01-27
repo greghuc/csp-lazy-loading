@@ -3,15 +3,9 @@
   "description": "Bug demo: page CSP blocks extension content script image lazy load",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": [
-    "scripting",
-    "declarativeNetRequestWithHostAccess"
-  ],
-  "host_permissions": [
-    "*://*.example.com/"
+    "activeTab",
+    "scripting"
   ],
   "action": {
     "default_popup": "popup.html"
