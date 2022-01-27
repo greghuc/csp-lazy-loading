@@ -1,5 +1,5 @@
 {
-  "name": "CSP image lazy load bug",
+  "name": "CSP image lazy load bug (v2)",
   "description": "Bug demo: page CSP blocks extension content script image lazy load",
   "version": "1.0",
   "manifest_version": 3,
